@@ -1,0 +1,15 @@
+{
+    "Print": {
+        "scope": "php",
+        "prefix": "pri",
+        "body": ["echo '<pre>'; print_r($1); die;$2"],
+        "description": "Log output to console"
+    },
+
+    "Print request": {
+        "scope": "php",
+        "prefix": "prireq",
+        "body": ["echo '<pre>'; print_r($$request->all()); die;$1"],
+        "description": "Log output to console"
+    }
+}
